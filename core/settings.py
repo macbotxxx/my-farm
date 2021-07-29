@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'contactus.apps.ContactusConfig',
     'frontend.apps.FrontendConfig',
     'newsletter.apps.NewsletterConfig',
+    'testimonials.apps.TestimonialsConfig',
 ]
 
 MIDDLEWARE = [
