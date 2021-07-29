@@ -1,0 +1,785 @@
+{%extends 'base.html' %}
+{%load static %}
+
+
+    
+    {% block content %}
+    <!-- main-area -->
+    <main>
+        
+        <!-- search-popup -->
+    <div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content search-popup">
+                <div class="text-center">
+                    <a href="#" class="close2" data-dismiss="modal" aria-label="Close">× close</a>
+                </div>
+                <div class="row search-outer">
+                    <div class="col-md-11"><input type="text" placeholder="Search for products..." /></div>
+                    <div class="col-md-1 text-right"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /search-popup -->
+        <!-- slider-area -->
+        <section id="home" class="slider-area slider-four fix p-relative">
+            
+            <div class="slider-active">
+            <div class="single-slider slider-bg d-flex align-items-center" style="background: url({% static "img/slider/slider_img_bg.png" %}) no-repeat;background-size: cover; background-position: center center;">
+                    <div class="container">
+                        <div class="row justify-content-center pt-50">
+                            <div class="col-lg-10 col-md-10">
+                                <div class="slider-content s-slider-content">
+                                    <h5 data-animation="fadeInDown" data-delay=".4s">Eat Best</h5>
+                                        <h2 data-animation="fadeInUp" data-delay=".4s">Eat Organic</h2>
+                                    <p data-animation="fadeInUp" data-delay=".6s">Fusce suscipit, velit id scelerisque tempus, enim est congue orci, eu sodales turpis tellus non elit. Cras hendrerit auctor cursus.</p>
+                                    
+                                        <div class="slider-btn mt-30">                                          
+                                        <a href="services.html" class="btn ss-btn mr-15" data-animation="fadeInRight" data-delay=".8s">Read More</a>
+                                            <a href="services.html" class="btn ss-btn active mr-15" data-animation="fadeInRight" data-delay=".8s">Contact Us</a>
+                                            
+                                    </div>        
+                                                            
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="slider-img" data-animation="fadeInUp" data-delay=".4s">
+                                <img src="{% static "img/slider/slider_img05.png" %}" alt="slider_img05">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                </div>
+            
+            <div class="back-to-top text-center">
+                <a href="#about2" class="smoth-scroll"><img src="{% static "img/bg/back-to-top.png" %}" alt="back-to-top"></a>
+            </div>
+                
+            
+        </section>
+        <!-- slider-area-end -->
+        
+        <!-- about-area -->
+        <section id="about2" class="about-area about-p pt-120 pb-90 p-relative">
+            <div class="container">
+                <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 pr-30">
+                        <div class="s-about-img p-relative  wow fadeInLeft  animated"   data-animation="fadeInLeft" data-delay=".4s">
+                            <img src="{% static "img/features/about_img.png" %}" alt="img">    
+                        </div>
+                        
+                    </div>
+                    
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about-content s-about-content  wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
+                            <div class="about-title second-title pb-25">  
+                                <h5>About Us</h5>
+                                <h2>Welcome To Organic & Agriculture Company</h2>   
+                                
+                            </div>
+                            
+                            <p>Nulla tristique aliquet tortor non imperdiet. Praesent eu metus mollis nibh hendrerit auctor. Mauris efficitur nisi eget turpis porttitor efficitur. Sed sit amet ante et dolor dictum fringilla et vitae purus.</p>
+                                <div class="about-content3 mt-30">
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="box">
+                                            <img src="{% static "img/features/organic-food.png" %}" alt="img">
+                                            <h5>100% Natural</h5>
+                                            <p> Mauris efficitur nisi eget turpis paor efficitur. Sed sit amet ante et dolor dictum fringilla et vitae purus.</p>
+                                            <a href="#"><i class="fal fa-angle-double-right"></i> Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box">
+                                            <img src="{% static "img/features/awward-icon.png" %}" alt="img">
+                                            <h5>Award Winning</h5>
+                                            <p> Mauris efficitur nisi eget turpis paor efficitur. Sed sit amet ante et dolor dictum fringilla et vitae purus.</p>
+                                            <a href="#"><i class="fal fa-angle-double-right"></i> Read More</a>
+                                        </div>
+                                </div>
+                                </div>
+                                
+                            
+                            </div>
+                            
+                    
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter mt-40 mb-30 wow fadeInUp  animated" >
+                            <div class="counter p-relative">
+                                <div class="icon"><img src="{% static "img/icon/tm-icon01.png" %}" alt="ctm"></div>
+                                    <div class="text">
+                                <strong>Team Member</strong>
+                                <span class="count">3897</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter  mt-40 mb-30 wow fadeInUp  animated" data-animation="fadeInDown animated" data-delay=".2s" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="counter p-relative">
+                                <div class="icon"><img src="{% static "img/icon/tm-icon02.png" %}" alt="ctm"></div>
+                                    <div class="text">
+                                <strong>Our Farm</strong>
+                                <span class="count">7849</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter mt-40 mb-30 wow fadeInUp  animated" data-animation="fadeInDown animated" data-delay=".2s" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="counter p-relative">
+                                <div class="icon"><img src="{% static "img/icon/tm-icon03.png" %}" alt="ctm"></div>
+                                    <div class="text">
+                                <strong>Happy Clients</strong>
+                                <span class="count">5687</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-counter mt-40 mb-30 wow fadeInUp  animated" data-animation="fadeInDown animated" data-delay=".2s" style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="counter p-relative">
+                                <div class="icon"><img src="{% static "img/icon/tm-icon04.png" %}" alt="ctm"></div>
+                                    <div class="text">
+                                <strong>Cup Of Coffee</strong>
+                                <span class="count">9874</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div></div></div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+        
+            <!-- services-area -->          
+        <section id="services2" class="services-area2 pt-120 pb-90 fix p-relative" style="background: #f4f7fe;">
+            
+            <div class="container">
+                
+                
+                <div class="row">
+                        <div class="col-lg-4 col-md-6">                             
+                        <div class="section-title pb-25">
+                                <h5>Features</h5>
+                            <h2>
+                                We Provide Best Services
+                            </h2>
+                        </div>      
+                            <p>Vestibulum sed eros vitae libero faucibus fermentum a efficitur velit. Etiam quis ligula luctus, venenatis justo quis, laoreet nisl.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">                             
+                        <div class="services-box2 mb-30">
+                            <div class="services-icon">
+                                <img src="{% static "img/icon/se-icon1.png" %}" alt="icon01">
+                            </div>
+                            <div class="services-content2">
+                                <h5><a href="services-detail.html">Vegetable Care</a></h5>   
+                                <p>Integer placerat sapien enim, at aliquet sem molestie nonulla tristique commodo augue at incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4 col-md-6">                             
+                        <div class="services-box2 mb-30">
+                            <div class="services-icon">
+                                <img src="{% static "img/icon/se-icon2.png" %}" alt="icon01">
+                            </div>
+                            <div class="services-content2">
+                                <h5><a href="services-detail.html">Fresh Food</a></h5>   
+                                <p>Integer placerat sapien enim, at aliquet sem molestie nonulla tristique commodo augue at incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4 col-md-6">                             
+                        <div class="services-box2 mb-30">
+                            <div class="services-icon">
+                                <img src="{% static "img/icon/se-icon3.png" %}" alt="icon01">
+                            </div>
+                            <div class="services-content2">
+                                <h5><a href="services-detail.html">Securty & Safety</a></h5>   
+                                <p>Integer placerat sapien enim, at aliquet sem molestie nonulla tristique commodo augue at incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4 col-md-6">                             
+                        <div class="services-box2 mb-30">
+                            <div class="services-icon">
+                                <img src="{% static "img/icon/se-icon4.png" %}" alt="icon01">
+                            </div>
+                            <div class="services-content2">
+                                <h5><a href="services-detail.html">Organic Products</a></h5>   
+                                <p>Integer placerat sapien enim, at aliquet sem molestie nonulla tristique commodo augue at incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4 col-md-6">                             
+                        <div class="services-box2 mb-30">
+                            <div class="services-icon">
+                                <img src="{% static "img/icon/se-icon5.png" %}" alt="icon01">
+                            </div>
+                            <div class="services-content2">
+                                <h5><a href="services-detail.html">24X7 Support</a></h5>   
+                                    <p>Integer placerat sapien enim, at aliquet sem molestie nonulla tristique commodo augue at incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>              
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- services-area-end -->
+        
+            <!-- about-area -->
+        <section id="about" class="about-area about-p pt-120 pb-90 p-relative">
+            <div class="container">
+                <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 pr-30">
+                        <div class="s-about-img p-relative">
+                            <img src="{% static "img/features/about-img2.png" %}" alt="img">  
+                            <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="popup-video"><img src="{% static "img/features/vplay.png" %}" alt="vplay"></a>
+                        </div>
+                        
+                    </div>
+                    
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about-content s-about-content">
+                            <div class="about-title second-atitle">            
+                                <h5>Watch Us</h5>                      
+                                <h2>How We Care & Grow Our
+Organic Vegetables  </h2>                                  
+                            </div>
+                            
+                            <ul class="ab-ul">
+                            <li>
+                                <div class="icon"><i class="fal fa-check"></i></div>
+                                <div class="text pt-10">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Maecenas ac pharetra metus. Maecenas vel lorem sapien fusce mattis leo dictum.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fal fa-check"></i></div>
+                                <div class="text pt-10">
+                                    Integer placerat sapien enim, at aliquet sem molestie non.posuere cubilia curae Maecenas ac pharetra metus. Maecenas vel lorem sapien fusce mattis leo dictum. 
+                                </div>
+                            </li>
+                                <li>
+                                <div class="icon"><i class="fal fa-check"></i></div>
+                                <div class="text pt-10">
+                                    Donec luctus est turpis, viverra vestibulum augue volutpat in. Duis euismod eu justo sit amet tincidunt. Suspendisse euismod ex iaculis, sodales nulla congue, mollis purus.
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                        
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+        
+            <!-- editor-choice -->          
+        <section id="editor-choice" class="product-slider pt-120 pb-90 fix" style="background:url('{% static "img/bg/shop-bg.png" %}');" >
+            <div class="container">
+                <div class="row">   
+                    <div class="col-lg-12">
+                        <div class="section-title center-align mb-50 text-center">
+                                <h5>Shop Now</h5>
+                            <h2>
+                                Visit Our Store Of Food
+                            </h2>
+                            
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+                <div class="row home-blog-active">
+                    <div class="col-lg-4 col-md-12">
+                            
+                        <div class="product mb-40">
+                        <div class="product__img">
+                            <a href="shop-details.html"><img src="{% static "img/shop/img1.jpg" %}" alt=""></a>
+                            <div class="product-action text-center">
+
+                                <a href="shop-details.html">Add Cart</a>
+
+                            </div>
+                        </div>
+                        <div class="product__content text-center pt-30">
+                            
+                            <h4 class="pro-title"><a href="shop-details.html">Agrofarm Cabbage</a></h4>
+                            <div class="price">
+                                <span>$95.00</span>
+                                <span class="old-price">$120.00</span>
+                            </div>
+                        </div>
+                    </div> 
+                            
+                        
+                    </div>
+                        <div class="col-lg-4 col-md-12">
+                            
+                        <div class="product mb-40">
+                        <div class="product__img">
+                            <a href="shop-details.html"><img src="{% static "img/shop/img2.jpg" %}" alt=""></a>
+                            <div class="product-action text-center">
+
+                                <a href="shop-details.html">Add Cart</a>
+
+                            </div>
+                        </div>
+                        <div class="product__content text-center pt-30">
+                
+                            <h4 class="pro-title"><a href="shop-details.html">Agrofarm Carrot</a></h4>
+                            <div class="price">
+                                <span>$95.00</span>
+                                <span class="old-price">$120.00</span>
+                            </div>
+                        </div>
+                    </div> 
+                            
+                            
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                            
+                        <div class="product mb-40">
+                        <div class="product__img">
+                            <a href="shop-details.html"><img src="{% static "img/shop/img3.jpg" %}" alt=""></a>
+                            <div class="product-action text-center">
+
+                                <a href="shop-details.html">Add Cart</a>
+
+                            </div>
+                        </div>
+                        <div class="product__content text-center pt-30">
+
+                            <h4 class="pro-title"><a href="shop-details.html">Agrofarm Capsicum</a></h4>
+                            <div class="price">
+                                <span>$95.00</span>
+                                <span class="old-price">$120.00</span>
+                            </div>
+                        </div>
+                    </div> 
+                            
+                            
+                        
+                    </div>
+                        <div class="col-lg-4 col-md-12">
+                            
+                        <div class="product mb-40">
+                        <div class="product__img">
+                            <a href="shop-details.html"><img src="{% static "img/shop/img4.jpg" %}" alt=""></a>
+                            <div class="product-action text-center">
+
+                                <a href="shop-details.html">Add Cart</a>
+
+                            </div>
+                        </div>
+                        <div class="product__content text-center pt-30">
+                    
+                            <h4 class="pro-title"><a href="shop-details.html">Agrofarm Onion</a></h4>
+                            <div class="price">
+                                <span>$95.00</span>
+                                <span class="old-price">$120.00</span>
+                            </div>
+                        </div>
+                    </div> 
+                            
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- case-study-end -->
+        
+            <!-- testimonial-area -->
+        <section class="testimonial-area pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title center-align mb-50 text-center">
+                            <h5>Testimonial</h5>
+                            <h2>
+                                What Our Clients Says About Us
+                            </h2>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-12">
+                        <div class="testimonial-active">
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Margie R. Robinson</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Roboto Dos</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Margie R. Robinson</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Roboto Dos</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>
+                                <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Margie R. Robinson</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5"> 
+                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
+                                    </div>
+                                    <div class="col-lg-7 col-md-7">
+                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                <div class="testi-author">
+                                    
+                                    <div class="ta-info">
+                                        <h6>Roboto Dos</h6>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="qt-img">
+                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-area-end -->
+        
+        
+            <!-- team-area -->
+        <section id="faq" class="faq-area pt-120 pb-100" style="background: url({% static "img/bg/faq-bg.png" %});background-size: cover; background-position: center center;">             
+            <div class="container">   
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="about-title second-atitle mb-30">            
+                                <h5>FAQ</h5>                      
+                                <h2>Frequently Asked Quesions</h2>
+                            </div>
+                        <div class="faq-wrap">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Breaking The Rules Using SQLite To Demo Web?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="faq-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                Monthly Web Development Update Pragmatic Releasing?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                How To Use Underlined Text To Improve User Experience
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Understanding CSS Layout And The Block Formatting
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                    
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- team-area-end -->  
+            <!-- blog-area -->
+        <section id="blog" class="blog-area  p-relative pt-120 pb-70 fix">
+            <div class="container">
+                <div class="row align-items-center"> 
+                    <div class="col-lg-12">
+                        <div class="section-title center-align mb-50 text-center">
+                            <h5>News</h5>
+                            <h2>
+                                Letest News & Blog
+                            </h2>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row blog-nth">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-post2 mb-30  wow fadeInDown  animated">
+                            <div class="blog-thumb2">
+                                <a href="blog-details.html"><img src="{% static "img/blog/inner_b1.jpg" %}" alt="img"></a>
+                                
+                            </div>
+                            <div class="blog-content2">     
+                                
+                                
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4><a href="blog-details.html">Mauris efficitur nisi eget.</a></h4>   
+                                    </div>
+                                </div>
+                                    <div class="b-meta">
+                                    <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                            <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> Admin</li>
+                                                <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                            </div>
+                                        
+                                        </div>
+                                </div>
+                                
+                                    
+                                    
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-6">
+                        <div class="single-post2 mb-30  wow fadeInUp  animated">
+                            <div class="blog-thumb2">
+                                <a href="blog-details.html"><img src="{% static "img/blog/inner_b2.jpg" %}" alt="img"></a>
+                                
+                            </div>
+                            <div class="blog-content2">     
+                                
+                                
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4><a href="blog-details.html">Mauris efficitur nisi eget.</a></h4>   
+                                    </div>
+                                </div>
+                                    <div class="b-meta">
+                                    <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                            <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> Admin</li>
+                                                <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                            </div>
+                                        
+                                        </div>
+                                </div>
+                                
+                                    
+                                    
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-6">
+                        <div class="single-post2 mb-30 wow fadeInDown  animated">
+                            <div class="blog-thumb2">
+                                <a href="blog-details.html"><img src="{% static "img/blog/inner_b3.jpg" %}" alt="img"></a>
+                                
+                            </div>
+                            <div class="blog-content2">     
+                                
+                                
+                                    <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4><a href="blog-details.html">Mauris efficitur nisi eget.</a></h4>   
+                                    </div>
+                                </div>
+                                    <div class="b-meta">
+                                    <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                            <div class="meta-info">
+                                            <ul>
+                                                <li><i class="fal fa-user"></i> Admin</li>
+                                                <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
+                                                    
+                                            </ul>
+                                        </div>
+                                            </div>
+                                        
+                                        </div>
+                                </div>
+                                
+                                    
+                                    
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- blog-area-end -->
+        
+        
+    </main>
+    <!-- main-area-end -->
+    {%endblock %}
+      
+
