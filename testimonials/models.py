@@ -47,6 +47,32 @@ class ClientTestimonies (models.Model):
 
 
 
+class FAQ (models.Model):
 
+    questions  = models.CharField(
+        verbose_name = _("Customers Questions"),
+        max_length=500,
+        null = True, 
+        help_text=_("client FAQ questions and answers.")
+        )
+
+    answers = models.TextField(
+        verbose_name = _("Customers Answers"),
+        null = True, 
+        help_text=_("Customers Answers.")
+    )
+
+    #Metadata
+    class Meta :
+        # 
+        verbose_name = _("FAQ questions and answers")
+        verbose_name_plural = _("FAQ questions and answers")
+
+    #Methods
+    # def get_absolute_url(self):
+    #     return reverse('url', args=[args])
+
+    def __str__(self):
+        return self.questions
 
 

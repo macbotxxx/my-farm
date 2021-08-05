@@ -429,18 +429,19 @@ Organic Vegetables  </h2>
                     
                     <div class="col-lg-12">
                         <div class="testimonial-active">
+                            {%for feedbacks in feedback %}
                             <div class="single-testimonial">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
+                                        <div class="test-img"><img  src="{{feedbacks.client_image.url}}"  alt="img"></div> 
                                     </div>
                                     <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
+                                        <p>{{feedbacks.client_comment | title }}</p>
                                 <div class="testi-author">
                                     
                                     <div class="ta-info">
-                                        <h6>Margie R. Robinson</h6>
-                                        <span>Web Developer</span>
+                                        <h6>{{feedbacks.client_full_name | title }}</h6>
+                                        <span>{{feedbacks.client_position}}</span>
                                     </div>
                                 </div>
                                     </div>
@@ -450,111 +451,8 @@ Organic Vegetables  </h2>
                                 <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
                                 </div>
                             </div>
-                            <div class="single-testimonial">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
-                                    </div>
-                                    <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
-                                <div class="testi-author">
-                                    
-                                    <div class="ta-info">
-                                        <h6>Roboto Dos</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="qt-img">
-                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
-                                    </div>
-                                    <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
-                                <div class="testi-author">
-                                    
-                                    <div class="ta-info">
-                                        <h6>Margie R. Robinson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="qt-img">
-                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
-                                    </div>
-                                    <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
-                                <div class="testi-author">
-                                    
-                                    <div class="ta-info">
-                                        <h6>Roboto Dos</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="qt-img">
-                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
-                                </div>
-                            </div>
-                                <div class="single-testimonial">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar.png" %}" alt="img"></div> 
-                                    </div>
-                                    <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
-                                <div class="testi-author">
-                                    
-                                    <div class="ta-info">
-                                        <h6>Margie R. Robinson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="qt-img">
-                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5"> 
-                                        <div class="test-img"><img src="{% static "img/testimonial/testi_avatar2.png" %}" alt="img"></div> 
-                                    </div>
-                                    <div class="col-lg-7 col-md-7">
-                                        <p>From banking and  insurance to wealth manage ent and securities distribution, we dedicate financial on services the teams serve all major sectors.</p>
-                                <div class="testi-author">
-                                    
-                                    <div class="ta-info">
-                                        <h6>Roboto Dos</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="qt-img">
-                                <img src="{% static "img/testimonial/qt-icon.png" %}" alt="img">
-                                </div>
-                            </div>   
+                            {%endfor%}
+
                         </div>
                     </div>
                 </div>
@@ -574,22 +472,25 @@ Organic Vegetables  </h2>
                             </div>
                         <div class="faq-wrap">
                             <div class="accordion" id="accordionExample">
+                               {%for i in faqs %}
                                 <div class="card">
-                                    <div class="card-header" id="headingOne">
+                                    <div class="card-header" id="headingOne{{i.id}}">
                                         <h2 class="mb-0">
                                             <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                Breaking The Rules Using SQLite To Demo Web?
+                                               {{i.questions | title}}
                                             </button>
                                         </h2>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne{{i.id}}" data-parent="#accordionExample" style="">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            {{i.answers}}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                {%endfor%}
+                                
+                               
+                                <!-- <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
                                             <button class="faq-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -604,36 +505,7 @@ Organic Vegetables  </h2>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                How To Use Underlined Text To Improve User Experience
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingFour">
-                                        <h2 class="mb-0">
-                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                Understanding CSS Layout And The Block Formatting
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                        </div>
-                                    </div>
-                                </div>
+                               -->
                             </div>
                         </div>
                     </div>
